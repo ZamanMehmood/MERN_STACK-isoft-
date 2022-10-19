@@ -76,6 +76,14 @@ export const AddTodo = () => {
               placeholder="Todo Title"
               value={value?.title}
               onChange={(e) => handleChange(e)}
+              onBlur={(e) => {
+                if (e.target.value === "") {
+                  setError({
+                  ...error,
+                  title: "please type something",
+                });
+                }
+              }}
             />
             <span className="text-danger">{error?.title}</span>
           </div>
@@ -89,6 +97,14 @@ export const AddTodo = () => {
               placeholder="Description"
               value={value?.description}
               onChange={(e) => handleChange(e)}
+              onBlur={(e) => {
+                if (e.target.value === "") {
+                  setError({
+                  ...error,
+                  description: "please type something",
+                });
+                }
+              }}
             />
              <span className="text-danger">{error?.description}</span>
           </div>

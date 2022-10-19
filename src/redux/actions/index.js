@@ -10,8 +10,8 @@ import {
       type: ADD_TODO,
       payload: {
         id: Date.now(),
-        title: todo?.title,
-        description: todo?.description,
+        title: todo.title,
+        description: todo.description,
       },
     };
   };
@@ -38,8 +38,8 @@ import {
       type: UPDATE_TODO,
       payload: {
         todoId: id,
-        todoTitle: todo?.title,
-        todoDescription: todo?.description,
+        todoTitle: todo.title,
+        todoDescription: todo.description,
       },
     };
   };
