@@ -3,7 +3,7 @@ import {
     DELETE_TODO,
     EDIT_TODO,
     UPDATE_TODO,
-  } from "./actionTypes";
+  } from "./actionTypes"; 
     
   export const addNewTodo = (todo) => {
     return {

@@ -10,6 +10,6 @@ function App() {
         <TodoLists />
     </div>
   );
-}
+} 
 
 export default App;
