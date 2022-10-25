@@ -1,0 +1,1 @@
+export const WEATHER_APP = 'WEATHER_APP';  // action type 
