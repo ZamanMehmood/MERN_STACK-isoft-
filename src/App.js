@@ -19,7 +19,6 @@ function App() {
   }
 
   const dec =() =>{
-    // dispatch(increment())
   dispatch(decrement())
   }
 
@@ -33,21 +32,8 @@ function App() {
       <button className="btn btn-primary m-2" onClick={() => inc()}>Increase</button>
       <button className="btn btn-secondary m-2" onClick={() => dispatch(reset())}>Reset</button>
       <button className="btn btn-warning m-2" onClick={() => dec()} disabled={counter===0}>Decrease</button>
-
-      {/* <h2>Login & Logout Buttons</h2>
-      <button onClick={() => dispatch(logIn())}>Login</button>
-      <button onClick={() => dispatch(logOut())}>Logout</button>
-      {auth ? (
-        <div>
-          <p>
-            I don't more than % of redux. But if you know 50% of it, you're like a Superman.
-          </p>
-        </div>
-      ) : (
-        ""
-      )} */}
     </div>
   );
-}
+} 
 
 export default App;

@@ -5,6 +5,6 @@ import { combineReducers } from "redux";
 
 const allReducers = combineReducers({
     counterReducer,
-    authReducer,
+    authReducer,   
 });
 export default allReducers;

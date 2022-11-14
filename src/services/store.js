@@ -5,7 +5,7 @@
 // const store = createStore(allReducers,composeEnhancer(applyMiddleware(thunk)))
 // export default store; 
 
-
+   
 import { createStore} from 'redux';
 import allReducers from './Reducers';
 const store = createStore(allReducers)
